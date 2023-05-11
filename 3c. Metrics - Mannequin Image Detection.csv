@@ -1,0 +1,22 @@
+HYPERPARAMETERS,,,,,,
+Contrast,0.7,,,,,
+Cropping,250 x 220,,,,,
+Grayscale,,,,,,
+,,,,,,
+MODEL,,,,,,
+CNN,Sequential,,,,,
+,Layers ,Conv2D,16 Nodes,ReLu,Maxpooling,Dropout(.25)
+,,Conv2D,32 Nodes,ReLu,Maxpooling,Dropout(.25)
+,,Conv2D,16 Nodes,ReLu,Maxpooling,Dropout(.25)
+,,Conv2D,32 Nodes,ReLu,Maxpooling,Dropout(.25)
+,,Conv2D,16 Nodes,ReLu,Maxpooling,Dropout(.25)
+,Flatten,,,,,
+,,Dense,256,ReLu,,
+,,Dense,1,Sigmoid,,
+,,,,,,
+,Optimizer,adam,,,,
+,,,,,,
+METRICS,,,,,,
+CNN,Precision,0.79828,,,,
+,Recall,0.80172,,,,
+,Accuracy,0.80705,,,,
